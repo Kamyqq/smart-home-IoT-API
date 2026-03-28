@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:8000/api
+@bearer = 1|A1Cgx3ToY7aQvvMKwd3PloFZK1F1iFzkodNvzQbxff3c08fc
+@apiKey = bMEyhK8713FFmW6saG812oPkBYlq4Jd8QlKMz3ufUIj8giQbdKFqYZV2JVVcORkT
+
+### GET room measurements
+GET {{baseUrl}}/rooms/1/measurements
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{bearer}}
+
+### POST room measurements
+POST {{baseUrl}}/measurements
+Accept: application/json
+Content-Type: application/json
+X-API-KEY: {{apiKey}}
+
+{
+    "temperature": 24,
+    "humidity": 25,
+    "light": 26
+}
+
+### GET room actions
+GET {{baseUrl}}/room-actions
+Accept: application/json
+Content-Type: application/json
+X-API-KEY: {{apiKey}}
