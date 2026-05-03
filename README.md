@@ -23,7 +23,7 @@ A complete, production-ready REST API built with **Laravel 13** for managing a S
 |---|------------------------------------------------|
 | Backend Framework | Laravel 13 (PHP 8.2+)                          |
 | Testing | Pest PHP                                       |
-| Database | SQLite / MySQL (configurable)                  |
+| Database | MySQL                 |
 | Queue Driver | Database (Laravel Queues)                      |
 | Hardware Client | C++ (Arduino UNO R4 WiFi / WiFi S3)            |
 | Sensors | DHT11 (Temp & Humidity), Photoresistor (Light) |
@@ -65,7 +65,7 @@ Open `.env` and make sure the following values are set correctly:
 ```dotenv
 APP_URL=http://localhost:8000
 
-DB_CONNECTION=sqlite
+DB_CONNECTION=MySQL
 
 QUEUE_CONNECTION=database
 CACHE_STORE=database
